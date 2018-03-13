@@ -35,9 +35,8 @@ class LessonsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: constantCellIdentifier)!
-        
-        cell.textLabel?.text = model.lessons[indexPath.section].events[indexPath.row].name
+        let cell = tableView.dequeueReusableCell(withIdentifier: constantCellIdentifier, for: indexPath) as! LessonTableViewCell
+        cell.title = model.lessons[indexPath.section].events[indexPath.row].name
 
         return cell
     }

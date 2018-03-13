@@ -17,6 +17,7 @@
 		5D4D9B7D204B23ED00F869F1 /* TanuGotchi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4D9B7C204B23ED00F869F1 /* TanuGotchi.swift */; };
 		5D4D9B7F204B26D200F869F1 /* LessonsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4D9B7E204B26D200F869F1 /* LessonsTableViewController.swift */; };
 		5D4D9B81204DA0A800F869F1 /* ToDoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4D9B80204DA0A800F869F1 /* ToDoListTableViewController.swift */; };
+		5DACB9CF2056E37D0061ACA1 /* LessonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DACB9CE2056E37D0061ACA1 /* LessonTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		5D4D9B7C204B23ED00F869F1 /* TanuGotchi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanuGotchi.swift; sourceTree = "<group>"; };
 		5D4D9B7E204B26D200F869F1 /* LessonsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsTableViewController.swift; sourceTree = "<group>"; };
 		5D4D9B80204DA0A800F869F1 /* ToDoListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListTableViewController.swift; sourceTree = "<group>"; };
+		5DACB9CE2056E37D0061ACA1 /* LessonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				5D4D9B7A204B22CC00F869F1 /* User.swift */,
 				5D4D9B7C204B23ED00F869F1 /* TanuGotchi.swift */,
 				5D4D9B7E204B26D200F869F1 /* LessonsTableViewController.swift */,
+				5DACB9CE2056E37D0061ACA1 /* LessonTableViewCell.swift */,
 				5D4D9B80204DA0A800F869F1 /* ToDoListTableViewController.swift */,
 			);
 			path = TanuGotchi;
@@ -154,6 +157,7 @@
 				5D4D9B81204DA0A800F869F1 /* ToDoListTableViewController.swift in Sources */,
 				5D4D9B7F204B26D200F869F1 /* LessonsTableViewController.swift in Sources */,
 				5D4D9B7B204B22CC00F869F1 /* User.swift in Sources */,
+				5DACB9CF2056E37D0061ACA1 /* LessonTableViewCell.swift in Sources */,
 				5D4D9B79204B164700F869F1 /* Lesson.swift in Sources */,
 				5D4D9B69204B15E600F869F1 /* ViewController.swift in Sources */,
 				5D4D9B7D204B23ED00F869F1 /* TanuGotchi.swift in Sources */,
