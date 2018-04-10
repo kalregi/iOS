@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tdP-Mh-gGV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tdP-Mh-gGV">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -55,6 +56,73 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GPq-mg-twO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="948" y="-511.39430284857576"/>
+        </scene>
+        <!--New Lesson View Controller-->
+        <scene sceneID="S0J-tS-Yzc">
+            <objects>
+                <viewController id="NEl-XX-mxC" customClass="NewLessonViewController" customModule="TanuGotchi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q8X-wg-OyH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aNJ-Kl-H93">
+                                <rect key="frame" x="37.5" y="100" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="tfW-5l-Me9"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tárgy neve" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcT-wa-ikr">
+                                <rect key="frame" x="145.5" y="150" width="83.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJh-JG-ofm">
+                                <rect key="frame" x="80" y="617" width="45" height="30"/>
+                                <state key="normal" title="Vissza"/>
+                                <connections>
+                                    <action selector="CancelButton:" destination="NEl-XX-mxC" eventType="touchUpInside" id="w3H-1k-64o"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zjq-tD-6pO">
+                                <rect key="frame" x="10" y="191" width="355" height="416"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTn-wb-wrX">
+                                <rect key="frame" x="244" y="617" width="51" height="30"/>
+                                <state key="normal" title="Mentés"/>
+                                <connections>
+                                    <action selector="SaveButton:" destination="NEl-XX-mxC" eventType="touchUpInside" id="oMt-yl-HtV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="K2k-xl-JrL" firstAttribute="bottom" secondItem="XJh-JG-ofm" secondAttribute="bottom" constant="20" id="3Ar-Eu-txt"/>
+                            <constraint firstItem="K2k-xl-JrL" firstAttribute="trailing" secondItem="PTn-wb-wrX" secondAttribute="trailing" constant="80" id="BIv-To-3Pw"/>
+                            <constraint firstItem="K2k-xl-JrL" firstAttribute="bottom" secondItem="PTn-wb-wrX" secondAttribute="bottom" constant="20" id="ChY-u2-cy8"/>
+                            <constraint firstItem="XJh-JG-ofm" firstAttribute="leading" secondItem="K2k-xl-JrL" secondAttribute="leading" constant="80" id="FLr-m1-JfH"/>
+                            <constraint firstItem="XJh-JG-ofm" firstAttribute="top" secondItem="zjq-tD-6pO" secondAttribute="bottom" constant="10" id="IAz-gi-fX0"/>
+                            <constraint firstItem="aNJ-Kl-H93" firstAttribute="centerX" secondItem="K2k-xl-JrL" secondAttribute="centerX" id="MSi-V4-eCx"/>
+                            <constraint firstItem="zjq-tD-6pO" firstAttribute="top" secondItem="dcT-wa-ikr" secondAttribute="bottom" constant="20" id="Utz-NT-ttr"/>
+                            <constraint firstItem="dcT-wa-ikr" firstAttribute="top" secondItem="aNJ-Kl-H93" secondAttribute="bottom" constant="20" id="aGB-8S-g2w"/>
+                            <constraint firstItem="K2k-xl-JrL" firstAttribute="trailing" secondItem="zjq-tD-6pO" secondAttribute="trailing" constant="10" id="i1u-9Y-FGL"/>
+                            <constraint firstItem="dcT-wa-ikr" firstAttribute="centerX" secondItem="K2k-xl-JrL" secondAttribute="centerX" id="lXb-H0-HTN"/>
+                            <constraint firstItem="aNJ-Kl-H93" firstAttribute="top" secondItem="K2k-xl-JrL" secondAttribute="top" constant="80" id="xYM-te-o3B"/>
+                            <constraint firstItem="zjq-tD-6pO" firstAttribute="leading" secondItem="K2k-xl-JrL" secondAttribute="leading" constant="10" id="yUd-DZ-lkN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="K2k-xl-JrL"/>
+                    </view>
+                    <connections>
+                        <outlet property="LessonNameTextField" destination="aNJ-Kl-H93" id="lXg-EZ-9HC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PrX-sy-8Ec" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1715" y="-517"/>
         </scene>
         <!--Item-->
         <scene sceneID="F34-WR-fkS">

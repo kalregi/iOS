@@ -10,6 +10,8 @@ import UIKit
 
 class LessonTableViewCell: UITableViewCell {
     
+    var lesson: Lesson?
+    
     var title: String? = nil {
         didSet {
             titleLabel.text = title
@@ -23,7 +25,7 @@ class LessonTableViewCell: UITableViewCell {
         return l
     }()
     
-    private let addImageView: UIImageView = UIImageView(image: #imageLiteral(resourceName: "ic_add_box"))
+    private let removeImageView: UIImageView = UIImageView(image: #imageLiteral(resourceName: "ic_remove_circle"))
     
     public func initialize(){
         var constraints: [NSLayoutConstraint] = []
@@ -34,11 +36,11 @@ class LessonTableViewCell: UITableViewCell {
                                         titleLabel.trailingAnchor.constraint(equalTo: (titleLabel.trailingAnchor), constant: -8.0),
                                         titleLabel.centerYAnchor.constraint(equalTo: (titleLabel.centerYAnchor))])
         
-        contentView.addSubview(addImageView);
-        addImageView.translatesAutoresizingMaskIntoConstraints = false;
-        constraints.append(contentsOf: [addImageView.leadingAnchor.constraint(equalTo: (addImageView.leadingAnchor), constant: 8.0),
-                                        addImageView.trailingAnchor.constraint(equalTo: (addImageView.trailingAnchor), constant: -8.0),
-                                        addImageView.centerYAnchor.constraint(equalTo: (addImageView.centerYAnchor))])
+        contentView.addSubview(removeImageView);
+        removeImageView.translatesAutoresizingMaskIntoConstraints = false;
+        constraints.append(contentsOf: [removeImageView.leadingAnchor.constraint(equalTo: (removeImageView.leadingAnchor), constant: 8.0),
+                                        removeImageView.trailingAnchor.constraint(equalTo: (removeImageView.trailingAnchor), constant: -8.0),
+                                        removeImageView.centerYAnchor.constraint(equalTo: (removeImageView.centerYAnchor))])
         
         NSLayoutConstraint.activate(constraints)
     }
@@ -58,11 +60,11 @@ class LessonTableViewCell: UITableViewCell {
                                         titleLabel.trailingAnchor.constraint(equalTo: (titleLabel.trailingAnchor)),
                                         titleLabel.centerYAnchor.constraint(equalTo: (contentView.centerYAnchor))])
         
-        contentView.addSubview(addImageView);
-        addImageView.translatesAutoresizingMaskIntoConstraints = false;
-        constraints.append(contentsOf: [addImageView.leadingAnchor.constraint(equalTo: (contentView.trailingAnchor), constant: -30.0),
-                                        addImageView.trailingAnchor.constraint(equalTo: (addImageView.trailingAnchor)),
-                                        addImageView.centerYAnchor.constraint(equalTo: (contentView.centerYAnchor))])
+        contentView.addSubview(removeImageView);
+        removeImageView.translatesAutoresizingMaskIntoConstraints = false;
+        constraints.append(contentsOf: [removeImageView.leadingAnchor.constraint(equalTo: (contentView.trailingAnchor), constant: -30.0),
+                                        removeImageView.trailingAnchor.constraint(equalTo: (removeImageView.trailingAnchor)),
+                                        removeImageView.centerYAnchor.constraint(equalTo: (contentView.centerYAnchor))])
         
         NSLayoutConstraint.activate(constraints)
         initialize()
@@ -79,5 +81,28 @@ class LessonTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    func transition() {
+        let newLessonViewController:NewLessonViewController = NewLessonViewController()
+        self.parentViewController?.present(newLessonViewController, animated: true, completion: nil)
+        
+    }
+    
+    func setLesson(lesson Lesson){
+        self.lesson = Lesson
+    }
 
+}
+
+extension UIView {
+    var parentViewController: UIViewController? {
+        var parentResponder: UIResponder? = self
+        while parentResponder != nil {
+            parentResponder = parentResponder!.next
+            if let viewController = parentResponder as? UIViewController {
+                return viewController
+            }
+        }
+        return nil
+    }
 }

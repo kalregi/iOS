@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UITabBarController {
     
-        static var model = User()
+        static var model = AppModel.getUser()
 
         override func viewDidLoad() {
         super.viewDidLoad()

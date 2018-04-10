@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D047A902079216100BF1293 /* NewLessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D047A8F2079216100BF1293 /* NewLessonViewController.swift */; };
+		5D047A92207926E200BF1293 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D047A91207926E200BF1293 /* AppModel.swift */; };
 		5D4D9B67204B15E600F869F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4D9B66204B15E600F869F1 /* AppDelegate.swift */; };
 		5D4D9B69204B15E600F869F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4D9B68204B15E600F869F1 /* ViewController.swift */; };
 		5D4D9B6C204B15E600F869F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D4D9B6A204B15E600F869F1 /* Main.storyboard */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D047A8F2079216100BF1293 /* NewLessonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLessonViewController.swift; sourceTree = "<group>"; };
+		5D047A91207926E200BF1293 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		5D4D9B63204B15E600F869F1 /* TanuGotchi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TanuGotchi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D4D9B66204B15E600F869F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D4D9B68204B15E600F869F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,11 +72,13 @@
 			children = (
 				5D4D9B66204B15E600F869F1 /* AppDelegate.swift */,
 				5D4D9B68204B15E600F869F1 /* ViewController.swift */,
+				5D047A8F2079216100BF1293 /* NewLessonViewController.swift */,
 				5D4D9B6A204B15E600F869F1 /* Main.storyboard */,
 				5D4D9B6D204B15E600F869F1 /* Assets.xcassets */,
 				5D4D9B6F204B15E600F869F1 /* LaunchScreen.storyboard */,
 				5D4D9B72204B15E600F869F1 /* Info.plist */,
 				5D4D9B78204B164700F869F1 /* Lesson.swift */,
+				5D047A91207926E200BF1293 /* AppModel.swift */,
 				5D4D9B7A204B22CC00F869F1 /* User.swift */,
 				5D4D9B7C204B23ED00F869F1 /* TanuGotchi.swift */,
 				5D4D9B7E204B26D200F869F1 /* LessonsTableViewController.swift */,
@@ -157,6 +163,8 @@
 				5D4D9B81204DA0A800F869F1 /* ToDoListTableViewController.swift in Sources */,
 				5D4D9B7F204B26D200F869F1 /* LessonsTableViewController.swift in Sources */,
 				5D4D9B7B204B22CC00F869F1 /* User.swift in Sources */,
+				5D047A92207926E200BF1293 /* AppModel.swift in Sources */,
+				5D047A902079216100BF1293 /* NewLessonViewController.swift in Sources */,
 				5DACB9CF2056E37D0061ACA1 /* LessonTableViewCell.swift in Sources */,
 				5D4D9B79204B164700F869F1 /* Lesson.swift in Sources */,
 				5D4D9B69204B15E600F869F1 /* ViewController.swift in Sources */,
