@@ -1,0 +1,385 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5DF8EB3820836F2500232E40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF8EB3720836F2500232E40 /* AppDelegate.swift */; };
+		5DF8EB3A20836F2500232E40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF8EB3920836F2500232E40 /* ViewController.swift */; };
+		5DF8EB3D20836F2500232E40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DF8EB3B20836F2500232E40 /* Main.storyboard */; };
+		5DF8EB3F20836F2700232E40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DF8EB3E20836F2700232E40 /* Assets.xcassets */; };
+		5DF8EB4220836F2700232E40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DF8EB4020836F2700232E40 /* LaunchScreen.storyboard */; };
+		5DF8EB4C20836F8F00232E40 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF8EB4920836F8E00232E40 /* User.swift */; };
+		5DF8EB4D20836F8F00232E40 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF8EB4A20836F8E00232E40 /* AppModel.swift */; };
+		5DF8EB4E20836F8F00232E40 /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF8EB4B20836F8F00232E40 /* Lesson.swift */; };
+		5DF8EB502083709A00232E40 /* LessonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF8EB4F2083709A00232E40 /* LessonsViewController.swift */; };
+		5DF8EB522083712B00232E40 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF8EB512083712B00232E40 /* TasksViewController.swift */; };
+		5DF8EB54208374AF00232E40 /* TanuGotchi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF8EB53208374AF00232E40 /* TanuGotchi.swift */; };
+		5DF8EB5620837A5100232E40 /* HeaderUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF8EB5520837A5100232E40 /* HeaderUIView.swift */; };
+		5DF8EB582083820500232E40 /* LessonUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF8EB572083820500232E40 /* LessonUITableViewCell.swift */; };
+		5DF8EB5C2085E77E00232E40 /* LessonHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF8EB5B2085E77E00232E40 /* LessonHeaderTableViewCell.swift */; };
+		5DF8EB5F2085E9D000232E40 /* LessonFooterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF8EB5E2085E9D000232E40 /* LessonFooterTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5DF8EB3420836F2500232E40 /* TanuGotchi2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TanuGotchi2.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DF8EB3720836F2500232E40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5DF8EB3920836F2500232E40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5DF8EB3C20836F2500232E40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5DF8EB3E20836F2700232E40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5DF8EB4120836F2700232E40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5DF8EB4320836F2700232E40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DF8EB4920836F8E00232E40 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5DF8EB4A20836F8E00232E40 /* AppModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		5DF8EB4B20836F8F00232E40 /* Lesson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
+		5DF8EB4F2083709A00232E40 /* LessonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsViewController.swift; sourceTree = "<group>"; };
+		5DF8EB512083712B00232E40 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
+		5DF8EB53208374AF00232E40 /* TanuGotchi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanuGotchi.swift; sourceTree = "<group>"; };
+		5DF8EB5520837A5100232E40 /* HeaderUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderUIView.swift; sourceTree = "<group>"; };
+		5DF8EB572083820500232E40 /* LessonUITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonUITableViewCell.swift; sourceTree = "<group>"; };
+		5DF8EB5B2085E77E00232E40 /* LessonHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		5DF8EB5E2085E9D000232E40 /* LessonFooterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonFooterTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5DF8EB3120836F2500232E40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5DF8EB2B20836F2500232E40 = {
+			isa = PBXGroup;
+			children = (
+				5DF8EB3620836F2500232E40 /* TanuGotchi2.0 */,
+				5DF8EB3520836F2500232E40 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5DF8EB3520836F2500232E40 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5DF8EB3420836F2500232E40 /* TanuGotchi2.0.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5DF8EB3620836F2500232E40 /* TanuGotchi2.0 */ = {
+			isa = PBXGroup;
+			children = (
+				5DF8EB53208374AF00232E40 /* TanuGotchi.swift */,
+				5DF8EB4A20836F8E00232E40 /* AppModel.swift */,
+				5DF8EB4B20836F8F00232E40 /* Lesson.swift */,
+				5DF8EB4920836F8E00232E40 /* User.swift */,
+				5DF8EB3720836F2500232E40 /* AppDelegate.swift */,
+				5DF8EB3920836F2500232E40 /* ViewController.swift */,
+				5DF8EB5520837A5100232E40 /* HeaderUIView.swift */,
+				5DF8EB5D2085E98E00232E40 /* LessonViewController */,
+				5DF8EB512083712B00232E40 /* TasksViewController.swift */,
+				5DF8EB3B20836F2500232E40 /* Main.storyboard */,
+				5DF8EB3E20836F2700232E40 /* Assets.xcassets */,
+				5DF8EB4020836F2700232E40 /* LaunchScreen.storyboard */,
+				5DF8EB4320836F2700232E40 /* Info.plist */,
+			);
+			path = TanuGotchi2.0;
+			sourceTree = "<group>";
+		};
+		5DF8EB5D2085E98E00232E40 /* LessonViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5DF8EB4F2083709A00232E40 /* LessonsViewController.swift */,
+				5DF8EB572083820500232E40 /* LessonUITableViewCell.swift */,
+				5DF8EB5B2085E77E00232E40 /* LessonHeaderTableViewCell.swift */,
+				5DF8EB5E2085E9D000232E40 /* LessonFooterTableViewCell.swift */,
+			);
+			name = LessonViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5DF8EB3320836F2500232E40 /* TanuGotchi2.0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DF8EB4620836F2700232E40 /* Build configuration list for PBXNativeTarget "TanuGotchi2.0" */;
+			buildPhases = (
+				5DF8EB3020836F2500232E40 /* Sources */,
+				5DF8EB3120836F2500232E40 /* Frameworks */,
+				5DF8EB3220836F2500232E40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TanuGotchi2.0;
+			productName = TanuGotchi2.0;
+			productReference = 5DF8EB3420836F2500232E40 /* TanuGotchi2.0.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5DF8EB2C20836F2500232E40 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Kalcsevszki Regina";
+				TargetAttributes = {
+					5DF8EB3320836F2500232E40 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 5DF8EB2F20836F2500232E40 /* Build configuration list for PBXProject "TanuGotchi2.0" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5DF8EB2B20836F2500232E40;
+			productRefGroup = 5DF8EB3520836F2500232E40 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5DF8EB3320836F2500232E40 /* TanuGotchi2.0 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5DF8EB3220836F2500232E40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DF8EB4220836F2700232E40 /* LaunchScreen.storyboard in Resources */,
+				5DF8EB3F20836F2700232E40 /* Assets.xcassets in Resources */,
+				5DF8EB3D20836F2500232E40 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5DF8EB3020836F2500232E40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DF8EB502083709A00232E40 /* LessonsViewController.swift in Sources */,
+				5DF8EB5C2085E77E00232E40 /* LessonHeaderTableViewCell.swift in Sources */,
+				5DF8EB54208374AF00232E40 /* TanuGotchi.swift in Sources */,
+				5DF8EB582083820500232E40 /* LessonUITableViewCell.swift in Sources */,
+				5DF8EB4E20836F8F00232E40 /* Lesson.swift in Sources */,
+				5DF8EB5620837A5100232E40 /* HeaderUIView.swift in Sources */,
+				5DF8EB3A20836F2500232E40 /* ViewController.swift in Sources */,
+				5DF8EB3820836F2500232E40 /* AppDelegate.swift in Sources */,
+				5DF8EB5F2085E9D000232E40 /* LessonFooterTableViewCell.swift in Sources */,
+				5DF8EB4C20836F8F00232E40 /* User.swift in Sources */,
+				5DF8EB4D20836F8F00232E40 /* AppModel.swift in Sources */,
+				5DF8EB522083712B00232E40 /* TasksViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5DF8EB3B20836F2500232E40 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DF8EB3C20836F2500232E40 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5DF8EB4020836F2700232E40 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DF8EB4120836F2700232E40 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5DF8EB4420836F2700232E40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5DF8EB4520836F2700232E40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5DF8EB4720836F2700232E40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TanuGotchi2.0/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kalregi.TanuGotchi2-0";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5DF8EB4820836F2700232E40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TanuGotchi2.0/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kalregi.TanuGotchi2-0";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5DF8EB2F20836F2500232E40 /* Build configuration list for PBXProject "TanuGotchi2.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DF8EB4420836F2700232E40 /* Debug */,
+				5DF8EB4520836F2700232E40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DF8EB4620836F2700232E40 /* Build configuration list for PBXNativeTarget "TanuGotchi2.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DF8EB4720836F2700232E40 /* Debug */,
+				5DF8EB4820836F2700232E40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5DF8EB2C20836F2500232E40 /* Project object */;
+}
