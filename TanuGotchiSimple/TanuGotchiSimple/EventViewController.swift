@@ -116,7 +116,8 @@ class EventViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
         guard event?.type == "regular" else {
             return
         }
-        event?.weekDay = LessonEvent.WeekDay(rawValue: dayPicker.selectedRow(inComponent: 0)-1)!
+        
+        event?.weekDay = LessonEvent.WeekDay(rawValue: (dayPicker.selectedRow(inComponent: 0)+1))!
         //refresh!()
     }
     
@@ -150,7 +151,11 @@ class EventViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
     func refreshEventValues(){
         if repeatSwitch.isOn {
             let selectedDate = dateTimePicker.date
-            let newEvent = LessonEvent(name: nameTextField.text!, hours: Calendar.current.component(.hour, from: selectedDate), minutes: Calendar.current.component(.minute, from: selectedDate), weekDay: LessonEvent.WeekDay(rawValue: dayPicker.selectedRow(inComponent: 0)-1)!)
+            if (dayPicker.selectedRow(inComponent: 0) == 0){
+                let date = (getEvent()?.getNextDate())!
+                dayPicker.selectRow(Calendar.current.component(.weekday, from: date)-1, inComponent: 0, animated: false)
+            }
+            let newEvent = LessonEvent(name: nameTextField.text!, hours: Calendar.current.component(.hour, from: selectedDate), minutes: Calendar.current.component(.minute, from: selectedDate), weekDay: LessonEvent.WeekDay(rawValue: (dayPicker.selectedRow(inComponent: 0)+1))!)
             user.lessons[lessonIndex].events[eventIndex] = newEvent
             dateTimePicker.datePickerMode = .time
             dayPicker.isHidden = false

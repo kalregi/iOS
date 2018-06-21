@@ -121,13 +121,13 @@ class LessonEvent : Codable {
     }
     
     enum WeekDay : Int, Codable {
-        case Sunday = 0
-        case Monday = 1
-        case Tuesday = 2
-        case Wednesday = 3
-        case Thurstday = 4
-        case Friday = 5
-        case Saturday = 6
+        case Sunday = 1
+        case Monday = 2
+        case Tuesday = 3
+        case Wednesday = 4
+        case Thurstday = 5
+        case Friday = 6
+        case Saturday = 7
     }
     
     static func == (lhs: LessonEvent, rhs: LessonEvent) -> Bool {
